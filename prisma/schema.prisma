@@ -39,7 +39,7 @@ model Navlink {
 model Category {
   id           Int       @id @default(autoincrement())
   spanishTitle String    @unique
-  englishtitle String?   @unique
+  englishTitle String?   @unique
   products     Product[]
   navLinkId    Int
   navLink      Navlink   @relation(fields: [navLinkId], references: [id])
