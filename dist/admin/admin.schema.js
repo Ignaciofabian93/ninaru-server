@@ -6,10 +6,10 @@ export const adminTypeDefs = `#graphql
     }
 
     type Query {
-      login: [username: String!, password: String!]: Admin
+      login(username: String!, password: String!): Admin
     }
 
     type Mutation {
-      changePassword:(password: String, newPassword: String): Admin
+      changePassword(password: String, newPassword: String): Admin
     }
 `;

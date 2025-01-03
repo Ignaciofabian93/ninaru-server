@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "rootDirs": ["src"],
-    "outDir": "dist",
-    "lib": ["es2020"],
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "types": ["node"]
-  }
+    "target": "ES2020", // Modern ES features
+    "module": "es2022", // Use modern ES module format
+    "moduleResolution": "node", // Use Node's module resolution algorithm
+    "outDir": "./dist", // Output compiled files to dist folder
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+    "strict": true, // Enable strict mode for better type checking
+    "skipLibCheck": true, // Skip library check for faster builds
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"], // Ensure src files are included
+  "exclude": ["node_modules"] // Exclude node_modules folder
 }
