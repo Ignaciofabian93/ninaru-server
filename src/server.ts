@@ -21,4 +21,4 @@ await server.start();
 app.use("/graphql", cors<cors.CorsRequest>({ origin: "*" }), express.json(), expressMiddleware(server));
 
 await new Promise<void>((resolve) => httpServer.listen({ port: 4000 }, resolve));
-console.log("Server ready");
+console.log("Server ready and running on port 4000");
